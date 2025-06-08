@@ -1,0 +1,125 @@
+#1
+"""c= float(input("qual a temperatura? "))
+f= (c*9+160)/5
+print(f)"""
+#2
+"""velocidade= float(input("qual a velocidade? "))
+distancia= tempo*velocidade
+litros= distancia/12
+
+print(velocidade)
+print(distancia)
+"
+print(tempo)
+print(litros)"""
+#3
+'''a= int(input("qual o valor? "))
+b= int(input("qual o valor? "))
+
+a,b=b,a
+
+
+print(a)
+print(b)'''
+
+#4
+'''largura= float(input("qual a largura? "))
+altura= float(input("qual a altura? "))
+comprimento= float(input("qual o comprimento? "))
+
+volume= largura*altura*comprimento
+print(volume)'''
+
+#5
+'''sm= float(input("qual o salario mensal? "))
+reajuste= int(input("qual o reajuste? "))
+
+ns= sm+(sm*reajuste/100)
+
+print(f"o novo salario é {ns}")'''
+
+#6
+'''a= int(input("quantos votos para o candidato A? "))
+b= int(input("quantos votos para o candidato B? "))
+c= int(input("quantos votos para o candidato C? "))
+branco= int(input("quantos votos brancos? "))
+nulo= int(input("quantos votos nulos? "))
+
+validos= a+b+c
+total= a+b+c+branco+nulo
+
+porcentagem_a= a/total *100
+porcentagem_b= b/total *100
+porcentagem_c= c/total *100
+porcentagem_branco= branco/total *100
+porcentagem_nulo= nulo/total*100
+
+print(porcentagem_a)
+print(porcentagem_b)
+print(porcentagem_c)
+print(porcentagem_branco)
+print(porcentagem_nulo)'''
+
+7#
+'''nota=0
+for x in range(1,5):
+    notas= float(input("qual a nota? "))
+    nota+=notas
+print(nota/4)'''
+
+#8
+'''nota1= float(input("qual a nota1? "))
+nota2= float(input("qual a nota2? "))
+nota3= float(input("qual a nota3? "))
+nota4= float(input("qual a nota4? "))
+
+peso1=2
+peso2=3
+peso3=4
+peso4=6
+
+media= (nota1*peso1+nota2*peso2+nota3*peso3+nota4*peso4)/15
+print(f"a media ponderada foi de: {media:.2f}")'''
+
+#9
+'''custo= float(input("qual o custo de fabrica? "))
+dis=12
+imp=45
+
+preço= custo+ (custo*dis/100)+(custo*imp/100)
+print(preço)'''
+
+#10
+'''print("""Hambúrguer................. R$ 3,00  
+Cheeseburger............... R$ 2,50  
+Fritas..................... R$ 2,50  
+Refrigerante............... R$ 1,00  
+Milkshake.................. R$ 3,00 """)
+
+ham=3
+che=2.5
+fri=2.5
+ref=1
+mil=3
+
+qh= int(input("quantos hamburguers? ")) 
+qc= int(input("quantos cheesburguers? "))
+qf= int(input("quantas fritas? "))
+qr= int(input("quantos refrigerantes? "))
+qm=int(input("quantos milkshakes? "))
+
+preço= qh*ham+qc*che+qf*fri+qr*ref+qm*mil
+quantidade= qh+qc+qf+qr+qm
+
+print(f"o valor foi de {preço} e a quantidade foi {quantidade}")'''
+
+#11
+'''fixo= 500
+comissão= 50
+porc=5
+
+nome= input("qual o vendedor? ")
+venda= int(input("quantas vendas? "))
+valor= int(input("qual o valor das vendas? "))
+
+print(f"{nome} irá receber {500+(venda*50)+(valor*porc/100)}")'''
