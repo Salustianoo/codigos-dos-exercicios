@@ -1,0 +1,147 @@
+#1
+"""nota1= float(input("qual a nota1? "))
+nota2= float(input("qual a nota2? "))
+nota3= float(input("qual a nota3? "))
+nota4= float(input("qual a nota4? "))
+
+media= (nota1+nota2+nota3+nota4) /4
+print(media)
+if media <6:
+    print("reprovado")
+else:
+    print("aprovado")"""
+
+#2
+'''nota1= float(input("qual a nota1? "))
+nota2= float(input("qual a nota2? "))
+nota3= float(input("qual a nota3? "))
+nota4= float(input("qual a nota4? "))
+
+media= (nota1+nota2+nota3+nota4) /4
+print(media)
+if media <6:
+    print("recuperação")
+    recuperação= float(input("qual a nota da recuperação? "))
+    media_final= (media+recuperação)/2
+    if media_final<5:
+        print("reprovado")
+    else:
+        print("aprovado")
+else:
+    print("aprovado")'''
+
+#3
+
+'''a= int(input("me diga um valor"))
+b= int(input("me diga um valor"))
+c= int(input("me diga um valor"))
+numeros=[a,b,c]
+numeros.sort()
+print(numeros)'''
+
+#4
+'''numero= int(input("qual o numero? "))
+
+if numero%2 == 0:
+    print("par")
+else:
+    print('impar')'''
+
+#5
+'''valor_casa= float(input("qual o valor da casa? "))
+salario= float(input("qual o salario? "))
+anos= int(input("quantos anos? "))
+anos= anos*12
+parcela= valor_casa/anos
+
+if parcela > (salario*0.3):
+    print(f"o valor da parcela foi de {parcela:.2f}")
+    print("emprestimo negado")
+else:
+    print(f"o valor da parcela foi de {parcela:.2f}")
+    print("emprestimo aprovado")'''
+
+#6
+'''kwh= float(input("qual o consumo? "))
+instalacao= input("qual a instalação? (r,c,i)").lower()
+
+if instalacao == "r" and kwh <=500:
+    preco= kwh*0.4
+else:
+    preco = kwh*0.65
+
+if instalacao == "c" and kwh <=1000:
+    preco= kwh*0.55
+else:
+    preco= kwh*0.60
+
+if instalacao == "i" and kwh <=5000:
+    preco= kwh*0.55
+else: 
+    preco- kwh*0.60
+
+print(f"o valor a ser pago é de {preco}")'''
+    
+#7
+'''altura= float(input("qual a sua altura? "))
+sexo= input("qual o seu sexo? (m,f)").lower()
+
+if sexo == "m":
+    peso= (72*altura)-58
+    print(peso)
+elif sexo == "f":
+    peso =(62.1*altura)-44.7
+print("o seu peso ideal é", peso)'''
+
+8#
+'''peso= float(input("qual o peso do pescado?" ))
+permitido= 50
+if peso >50:
+    print("terá que pagar multa")
+    multa= (peso-permitido)*4
+    print("a multa será de:", multa)
+else:
+    print("não pagará multa")'''
+
+#9
+'''valor_h= 12.50
+valor_h_e= 18.5
+
+horas= float(input("quantas horas semanais? "))
+
+if horas >40:
+    pagamento=(horas-40)*valor_h_e
+    print(f"{pagamento:.2f}")
+else:
+    pagamento= horas*valor_h
+    print(f"{pagamento:.2f}")'''
+
+#10
+'''salario= float(input("qual o salario? "))
+
+if salario <=1000:
+    salario= salario+(salario*15/100)
+    print(f"o novo salario vai ser de:{salario:.2f}")
+elif salario >1000 and salario <=2000:
+    salario= salario+(salario*10/100)
+    print(f"o novo salario vai ser de:{salario:.2f}")
+elif salario >2000 and salario <=3000:
+    salario= salario+(salario*5/100)
+    print(f"o novo salario vai ser de:{salario:.2f}")
+else:
+    salario= salario+(salario*2.5/100)
+    print(f"o novo salario vai ser de:{salario:.2f}")'''
+
+#11
+
+'''idade= int(input("qual sua idade? "))
+if idade <=8:
+    print("pré mirim")
+elif idade >8 and idade <=11:
+    print("mirim")
+elif idade >11 and idade <=14:
+    print("infantil")
+elif idade >14 and idade <= 17:
+    print("juvenil")
+else:
+    print("adulto")'''
