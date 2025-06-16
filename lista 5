@@ -1,0 +1,99 @@
+#1
+"""contador= 1
+
+while contador <50:
+    print(contador)
+    if contador % 3 == 0 and contador % 5==0:
+        print(" multiplo de 5 e 3")
+    elif contador % 3 == 0:
+        print(" multiplo de 3")
+    elif contador % 5 == 0:
+        print("multiplo de 5")
+    contador+=1"""
+
+#2
+
+'''senha= "python123"
+
+while True:
+    senha= input("qual a senha? ")
+
+    if senha != "python123":
+        print("senha incorreta, tente novamente")
+    else:
+        print("senha correta")
+        break'''
+
+#3
+"""numero= 0
+
+while numero <100:
+    numero+=1
+    if numero %4==0:
+        continue
+    else:
+        print(numero)"""
+
+#4
+
+"""linhas= int(input("quantas linhas? "))
+
+coluna=1
+while coluna <= linhas:
+    asterisco=1
+    while asterisco <= coluna:
+        print("*", end="")
+        asterisco+=1
+    print()
+    coluna+=1
+"""
+#5
+'''saldo=0
+
+print(
+    "1- Ver saldo \n"
+    "2- Depositar \n"
+    "3- Sacar \n"
+    "4- Sair"
+)
+
+while True:
+    botao= int(input("oque deseja? "))
+    if botao == 1:
+        print(saldo)
+    
+    elif botao == 2:
+        deposito= float(input("quanto deseja depositar? "))
+        saldo += deposito
+    elif botao == 3:
+        sacar= float(input("quanto deseja sacar? "))
+        if saldo < sacar:
+            print("saldo insuficiente")
+        else:
+            saldo -= sacar
+    elif botao == 4:
+        print("operação finalizada.")
+        break
+    else:
+        print("escolha invalida")'''
+
+#6
+#o codigo mais trabalhoso que eu ja fiz até agora
+'''contador=1 #o contador precisa começar em 1 para que rode apenas 3 vezes (não sei o porque)
+consumo_total=0
+residencia=1 #começa com um, para que o numero da residencia no print inicial comece com 1
+while contador <=3:
+    consumo_diario=0 #zera o consumo diario p cada residencia
+    numero_aparelhos=1 #começa com um pelo mesmo motivo da variavel residencia começar com 1
+    print(f"residencia {residencia}")
+    aparelhos= int(input("quantos aparelhos? "))
+    while numero_aparelhos <= aparelhos:
+        potencia= float(input(f"qual a potencia do aparelho {numero_aparelhos}? "))
+        horas= int(input(f"quanto tempo de uso do aparelho {numero_aparelhos}? "))
+        numero_aparelhos+=1 #soma mais um aparelho para formatar bunitin
+        consumo_diario= (potencia*horas)/1000
+        consumo_total+=consumo_diario #adiciona o consumo diario de cada residencia
+    print(f"a residencia {residencia} consumiu {consumo_diario}")
+    residencia+=1
+    contador+=1     
+print(f"o consumo das 3 casas foi de: {consumo_total}")'''
