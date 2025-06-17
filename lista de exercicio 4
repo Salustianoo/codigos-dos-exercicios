@@ -13,8 +13,7 @@ while contador <50:
 
 #2
 
-'''senha= "python123"
-
+'''s
 while True:
     senha= input("qual a senha? ")
 
