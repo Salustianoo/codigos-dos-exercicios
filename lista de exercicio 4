@@ -78,21 +78,21 @@ while True:
 
 #6
 #o codigo mais trabalhoso que eu ja fiz até agora
-'''contador=1 #o contador precisa começar em 1 para que rode apenas 3 vezes (não sei o porque)
+'''residencia =1
 consumo_total=0
-residencia=1 #começa com um, para que o numero da residencia no print inicial comece com 1
-while contador <=3:
-    consumo_diario=0 #zera o consumo diario p cada residencia
-    numero_aparelhos=1 #começa com um pelo mesmo motivo da variavel residencia começar com 1
-    print(f"residencia {residencia}")
-    aparelhos= int(input("quantos aparelhos? "))
-    while numero_aparelhos <= aparelhos:
+while residencia <4:
+    print("residencia", residencia)
+    aparelhos= int(input(f"quantos aparelhos na residencia {residencia}?"))
+    numero_aparelhos=0
+    consumo_diario=0
+    while numero_aparelhos < aparelhos:
+        numero_aparelhos+=1
         potencia= float(input(f"qual a potencia do aparelho {numero_aparelhos}? "))
-        horas= int(input(f"quanto tempo de uso do aparelho {numero_aparelhos}? "))
-        numero_aparelhos+=1 #soma mais um aparelho para formatar bunitin
-        consumo_diario= (potencia*horas)/1000
-        consumo_total+=consumo_diario #adiciona o consumo diario de cada residencia
-    print(f"a residencia {residencia} consumiu {consumo_diario}")
+        tempo= int(input(f"qual o tempo de uso do aparelho {numero_aparelhos}? "))
+        consumo=(potencia*tempo)/1000
+        consumo_diario+=consumo
+        print(f"o consumo diario da residencia {residencia} foi de {consumo_diario}")
+    consumo_total+=consumo_diario
     residencia+=1
-    contador+=1     
-print(f"o consumo das 3 casas foi de: {consumo_total}")'''
+print(f"o consumo total das 3 casas foi de: {consumo_total:.2f}")
+    '''
