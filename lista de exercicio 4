@@ -78,21 +78,22 @@ while True:
 
 #6
 #o codigo mais trabalhoso que eu ja fiz até agora
-'''residencia =1
+'''residencias= int(input("quantas residencias? "))
+residencia=1
 consumo_total=0
-while residencia <4:
-    print("residencia", residencia)
-    aparelhos= int(input(f"quantos aparelhos na residencia {residencia}?"))
-    numero_aparelhos=0
+while residencia <=residencias:
+    aparelhos= int(input(f"quantos aparelhos na casa {residencia} "))
+    n_aparelhos=1
     consumo_diario=0
-    while numero_aparelhos < aparelhos:
-        numero_aparelhos+=1
-        potencia= float(input(f"qual a potencia do aparelho {numero_aparelhos}? "))
-        tempo= int(input(f"qual o tempo de uso do aparelho {numero_aparelhos}? "))
+    while n_aparelhos <= aparelhos:
+        potencia= float(input(f"qual a potencia do aparelho {n_aparelhos} "))
+        tempo= int(input(f"qual o tempo de uso do aparelho {n_aparelhos} "))
         consumo=(potencia*tempo)/1000
-        consumo_diario+=consumo
-        print(f"o consumo diario da residencia {residencia} foi de {consumo_diario}")
-    consumo_total+=consumo_diario
+        consumo_diario+= consumo
+        consumo_total+= consumo_diario
+        n_aparelhos+=1
+    print(f"o consumo diario da residencia {residencia} foi de {consumo_diario:.2f}")
     residencia+=1
-print(f"o consumo total das 3 casas foi de: {consumo_total:.2f}")
+print(f"o consumo total das {residencias} residencias foi de: {consumo_total:.2f}")
+
     '''
