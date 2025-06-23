@@ -77,7 +77,6 @@ while True:
         print("escolha invalida")'''
 
 #6
-#o codigo mais trabalhoso que eu ja fiz até agora
 '''residencias= int(input("quantas residencias? "))
 residencia=1
 consumo_total=0
